@@ -1,0 +1,35 @@
+<head>
+  <title>mdr_snake_game</title>
+</head>
+
+<body>
+	<div class="container">
+  		{{> titleheader}}
+  		{{> hello}}
+		{{> gameboard}}
+	</div>
+</body>
+
+<template name="titleheader">
+	<div class="row">
+		<h1>SNAKE GAME</h1>
+  	</div>
+
+</template>
+
+<template name="hello">
+	<div class="row">
+		<p>
+			<button type="button" class="btn btn-lg btn-primary start">Start!</button>
+			<button type="button" class="btn btn-lg btn-danger stop">Stop!</button>
+		</p>
+  	</div>
+
+</template>
+
+<template name="gameboard">
+	<div class="row gameboardrow">
+	  <canvas id="gameboardcanvas" width="400" height="400" style="border:2px solid #000000;"></canvas>
+	</div>
+</template>
+
